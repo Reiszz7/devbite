@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title">
+  <title id="title">Cold Brew Java</title>
+  <g stroke="#171b18" stroke-width="5" stroke-linejoin="round">
+    <path fill="none" stroke-linecap="round" d="m145 22 20-15"/>
+    <path fill="#D4EEF6" d="M72 39h94l-10 123H83L72 39Z"/>
+    <path fill="#6B3E26" d="M79 76h80l-7 81H87l-8-81Z"/>
+    <path fill="#9D6948" d="M81 77c25-9 52 9 78 0"/>
+    <path fill="#BDEBFA" d="m94 63 13-17 16 13-12 18-17-14Zm38 34 15-14 11 18-15 12-11-16Z"/>
+    <path fill="#F1F4EF" d="M68 31h102v14H68V31Z"/>
+  </g>
+  <text x="120" y="136" fill="#F0E4D8" font-family="monospace" font-size="19" font-weight="bold" text-anchor="middle">JAVA</text>
+</svg>

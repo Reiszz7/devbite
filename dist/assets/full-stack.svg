@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title">
+  <title id="title">Full Stack Burger</title>
+  <g stroke="#171b18" stroke-width="5" stroke-linejoin="round">
+    <path fill="#F1A43B" d="M39 75c8-34 36-52 81-52s73 18 81 52H39Z"/>
+    <path fill="#69A833" d="M35 88c13-14 26 13 42 0 16-13 30 14 46 0 16-13 30 14 47 0 14-11 25 8 35 1l-5 21H40l-5-22Z"/>
+    <path fill="#FFC928" d="m40 107 72 22 88-22-5 29H45l-5-29Z"/>
+    <path fill="#713C27" d="M38 133c0-14 12-25 26-25h112c14 0 26 11 26 25H38Z"/>
+    <path fill="#F1A43B" d="M37 135h166v8c0 12-10 22-22 22H59c-12 0-22-10-22-22v-8Z"/>
+  </g>
+  <g fill="#FFF5C4"><circle cx="80" cy="47" r="3"/><circle cx="117" cy="38" r="3"/><circle cx="154" cy="50" r="3"/></g>
+</svg>

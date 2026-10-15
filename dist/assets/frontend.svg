@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title">
+  <title id="title">Front-end Crispy</title>
+  <g stroke="#171b18" stroke-width="5" stroke-linejoin="round">
+    <path fill="#F4B44D" d="M39 74c8-33 36-51 81-51s73 18 81 51H39Z"/>
+    <path fill="#83BF47" d="M36 84c11-10 22 11 35 0 13-11 24 11 37 0 13-10 24 11 37 0 13-11 24 11 37 0 10-8 18 5 23 3v20H38l-2-23Z"/>
+    <path fill="#F5D64D" d="M43 104h154l-11 24H51l-8-24Z"/>
+    <path fill="#D8792D" d="M48 123c10-13 20 5 31-5 11-10 21 8 33-2 12-11 23 7 35-3 12-10 22 6 34-2l11 22H45l3-10Z"/>
+    <path fill="#F4B44D" d="M37 135h166v8c0 12-10 22-22 22H59c-12 0-22-10-22-22v-8Z"/>
+  </g>
+  <g fill="#FFF5C4"><circle cx="78" cy="47" r="3"/><circle cx="120" cy="37" r="3"/><circle cx="163" cy="50" r="3"/></g>
+</svg>

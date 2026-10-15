@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title">
+  <title id="title">Cookie 404</title>
+  <path fill="#D7943D" stroke="#171b18" stroke-width="6" stroke-linejoin="round" d="M176 39c-8 15 2 31 18 34-10 9-9 26 2 34-16 6-20 25-9 38-16 10-41 18-67 18-49 0-82-29-82-66s35-72 82-72c20 0 39 5 56 14Z"/>
+  <g fill="#4B2D22" stroke="#171b18" stroke-width="3">
+    <circle cx="86" cy="65" r="9"/><circle cx="127" cy="48" r="8"/><circle cx="145" cy="91" r="10"/><circle cx="91" cy="120" r="10"/><circle cx="132" cy="139" r="7"/><circle cx="60" cy="91" r="6"/>
+  </g>
+  <text x="116" y="105" fill="#FFF1CF" font-family="monospace" font-size="22" font-weight="bold" text-anchor="middle">404</text>
+</svg>

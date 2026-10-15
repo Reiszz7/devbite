@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title">
+  <title id="title">Back-end Bacon</title>
+  <g stroke="#171b18" stroke-width="5" stroke-linejoin="round">
+    <path fill="#ECA543" d="M39 70c9-31 37-48 81-48s72 17 81 48H39Z"/>
+    <path fill="#B43E2E" d="m46 77 22 13 25-13 26 13 26-13 26 13 22-13 5 25H42l4-25Z"/>
+    <path fill="#EEC52D" d="m40 101 61 20 99-20-6 28H46l-6-28Z"/>
+    <path fill="#603421" d="M38 128c0-13 11-24 24-24h116c13 0 24 11 24 24H38Z"/>
+    <path fill="#ECA543" d="M37 132h166v10c0 12-10 22-22 22H59c-12 0-22-10-22-22v-10Z"/>
+  </g>
+  <g fill="#FFF5C4"><circle cx="82" cy="43" r="3"/><circle cx="120" cy="35" r="3"/><circle cx="157" cy="45" r="3"/></g>
+</svg>

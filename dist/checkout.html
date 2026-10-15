@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Finalização de pedido da DevBite.">
+  <title>DevBite | Meu Carrinho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" id="checkout-link-logo" href="index.html" aria-label="DevBite - página inicial"><span class="brand-mark">&lt;/&gt;</span><span>Dev<span>Bite</span></span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="nav-link" id="checkout-nav-cardapio" href="index.html">Cardápio</a>
+        <a class="nav-link is-active" id="checkout-nav-carrinho" href="checkout.html" aria-current="page">Meu Carrinho <span class="cart-count">2</span></a>
+        <a class="nav-link" id="checkout-nav-admin" href="admin.html">Área Restrita</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="inner-page container">
+    <header class="page-heading">
+      <p class="eyebrow"><span class="status-dot"></span> Checkout seguro</p>
+      <h1>Finalize seu <span>pedido_</span></h1>
+      <p>Revise os itens e conte para a gente onde essa entrega deve chegar.</p>
+    </header>
+
+    <div class="checkout-layout">
+      <section class="panel cart-panel" aria-labelledby="titulo-carrinho">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">Etapa 01</p>
+            <h2 id="titulo-carrinho">Itens do carrinho</h2>
+          </div>
+          <span class="results-count">2 itens</span>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="data-table cart-table">
+            <thead>
+              <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Preço unitário</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Subtotal</th>
+                <th scope="col"><span class="sr-only">Ação</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="item-carrinho-full-stack">
+                <td data-label="Produto"><div class="table-product"><img src="assets/full-stack.svg" alt=""><div><strong>Full Stack Burger</strong><small>Burgers</small></div></div></td>
+                <td data-label="Preço">R$ 34,90</td>
+                <td data-label="Quantidade"><input class="quantity-input" id="quantidade-full-stack" name="quantidade-full-stack" type="number" min="1" value="1" aria-label="Quantidade de Full Stack Burger"></td>
+                <td data-label="Subtotal"><strong>R$ 34,90</strong></td>
+                <td data-label="Ação"><button class="btn-remove" id="btn-remover-full-stack" data-id="burger-01" type="button" aria-label="Remover Full Stack Burger">Remover</button></td>
+              </tr>
+              <tr id="item-carrinho-cold-brew">
+                <td data-label="Produto"><div class="table-product"><img src="assets/cold-brew.svg" alt=""><div><strong>Cold Brew Java</strong><small>Bebidas</small></div></div></td>
+                <td data-label="Preço">R$ 12,90</td>
+                <td data-label="Quantidade"><input class="quantity-input" id="quantidade-cold-brew" name="quantidade-cold-brew" type="number" min="1" value="1" aria-label="Quantidade de Cold Brew Java"></td>
+                <td data-label="Subtotal"><strong>R$ 12,90</strong></td>
+                <td data-label="Ação"><button class="btn-remove" id="btn-remover-cold-brew" data-id="bebida-01" type="button" aria-label="Remover Cold Brew Java">Remover</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="order-summary" id="resumo-pedido">
+          <div><span>Subtotal</span><strong>R$ 47,80</strong></div>
+          <div><span>Taxa de entrega</span><strong>R$ 5,00</strong></div>
+          <div class="summary-total"><span>Valor total</span><strong id="valor-total">R$ 52,80</strong></div>
+        </div>
+      </section>
+
+      <section class="panel form-panel" aria-labelledby="titulo-entrega">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">Etapa 02</p>
+            <h2 id="titulo-entrega">Entrega e pagamento</h2>
+          </div>
+        </div>
+
+        <form id="form-checkout" action="#" method="post">
+          <div class="form-group">
+            <label for="cliente-nome">Nome completo</label>
+            <input id="cliente-nome" name="nome" type="text" placeholder="Como podemos te chamar?" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="cliente-endereco">Endereço de entrega</label>
+            <input id="cliente-endereco" name="endereco" type="text" placeholder="Rua, número, bairro e complemento" autocomplete="street-address" required>
+          </div>
+          <div class="form-group">
+            <label for="cliente-telefone">Telefone</label>
+            <input id="cliente-telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required>
+          </div>
+          <fieldset class="payment-fieldset">
+            <legend>Método de pagamento</legend>
+            <div class="payment-options">
+              <label class="payment-option" for="pagamento-pix"><input id="pagamento-pix" name="pagamento" type="radio" value="pix" checked><span>◈</span><strong>Pix</strong></label>
+              <label class="payment-option" for="pagamento-cartao"><input id="pagamento-cartao" name="pagamento" type="radio" value="cartao"><span>▣</span><strong>Cartão</strong></label>
+              <label class="payment-option" for="pagamento-dinheiro"><input id="pagamento-dinheiro" name="pagamento" type="radio" value="dinheiro"><span>$</span><strong>Dinheiro</strong></label>
+            </div>
+          </fieldset>
+          <label class="checkbox-label" for="sem-talheres"><input id="sem-talheres" name="sem-talheres" type="checkbox"> Não preciso de talheres</label>
+          <button class="btn btn-primary btn-full" id="btn-finalizar-pedido" type="submit">Finalizar pedido <span aria-hidden="true">→</span></button>
+          <p class="form-note">🔒 Seus dados são usados somente para esta entrega.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand brand-small" id="checkout-link-footer" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Dev<span>Bite</span></a>
+      <p>Feito com código, café e fome. © 2026 DevBite.</p>
+    </div>
+  </footer>
+</body>
+</html>

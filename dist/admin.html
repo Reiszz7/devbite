@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Painel administrativo da DevBite.">
+  <title>DevBite | Painel Administrativo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+  <header class="site-header admin-header">
+    <div class="container header-content">
+      <a class="brand" id="admin-link-logo" href="index.html" aria-label="DevBite - página inicial"><span class="brand-mark">&lt;/&gt;</span><span>Dev<span>Bite</span></span><small>admin</small></a>
+      <nav class="main-nav" aria-label="Navegação administrativa">
+        <a class="nav-link is-active" id="admin-nav-dashboard" href="#dashboard" aria-current="page">Dashboard</a>
+        <a class="nav-link" id="admin-nav-cadastrar" href="#cadastro-produto">Cadastrar Produto</a>
+        <a class="nav-link" id="admin-nav-relatorios" href="#pedidos-recentes">Relatórios</a>
+        <a class="nav-link nav-exit" id="admin-nav-sair" href="index.html">Sair ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="inner-page container" id="dashboard">
+    <header class="page-heading admin-heading">
+      <div>
+        <p class="eyebrow"><span class="status-dot"></span> Sistema operacional</p>
+        <h1>Olá, <span>admin_</span></h1>
+        <p>Acompanhe a operação da DevBite e mantenha o cardápio atualizado.</p>
+      </div>
+      <div class="date-chip"><span>●</span> Hoje, 15 out 2026</div>
+    </header>
+
+    <section class="stats-grid" aria-label="Resumo do dashboard">
+      <article class="stat-card"><span class="stat-icon">↗</span><div><p>Vendas hoje</p><strong>R$ 1.284,60</strong><small>+12% desde ontem</small></div></article>
+      <article class="stat-card"><span class="stat-icon">▤</span><div><p>Pedidos</p><strong>32</strong><small>7 em preparo</small></div></article>
+      <article class="stat-card"><span class="stat-icon">◫</span><div><p>Ticket médio</p><strong>R$ 40,14</strong><small>+R$ 3,20 esta semana</small></div></article>
+    </section>
+
+    <div class="admin-layout">
+      <section class="panel" id="cadastro-produto" aria-labelledby="titulo-cadastro">
+        <div class="panel-heading">
+          <div><p class="section-kicker">Gerenciamento</p><h2 id="titulo-cadastro">Cadastrar produto</h2></div>
+          <span class="panel-symbol" aria-hidden="true">＋</span>
+        </div>
+        <form id="form-cadastro-produto" action="#" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="produto-nome">Nome do produto</label>
+            <input id="produto-nome" name="nome-produto" type="text" placeholder="Ex.: DevOps Double" required>
+          </div>
+          <div class="form-group">
+            <label for="produto-descricao">Descrição</label>
+            <textarea id="produto-descricao" name="descricao-produto" rows="4" placeholder="Descreva ingredientes e diferenciais" required></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="produto-preco">Preço (R$)</label>
+              <input id="produto-preco" name="preco-produto" type="number" min="0" step="0.01" placeholder="0,00" required>
+            </div>
+            <div class="form-group">
+              <label for="produto-categoria">Categoria</label>
+              <select id="produto-categoria" name="categoria-produto" required>
+                <option value="">Selecione</option>
+                <option value="burgers">Burgers</option>
+                <option value="bebidas">Bebidas</option>
+                <option value="sobremesas">Sobremesas</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="produto-imagem">Imagem do produto</label>
+            <label class="file-drop" for="produto-imagem"><span>↑</span><strong>Escolher imagem</strong><small>PNG, JPG ou WEBP • máximo 5 MB</small></label>
+            <input class="file-input" id="produto-imagem" name="imagem-produto" type="file" accept="image/png,image/jpeg,image/webp" required>
+          </div>
+          <button class="btn btn-primary btn-full" id="btn-salvar-produto" type="submit">Salvar produto <span aria-hidden="true">→</span></button>
+        </form>
+      </section>
+
+      <section class="panel orders-panel" id="pedidos-recentes" aria-labelledby="titulo-pedidos">
+        <div class="panel-heading">
+          <div><p class="section-kicker">Tempo real</p><h2 id="titulo-pedidos">Pedidos recentes</h2></div>
+          <button class="btn-link" id="btn-ver-todos-pedidos" type="button">Ver todos →</button>
+        </div>
+        <div class="order-list">
+          <article class="order-card" id="pedido-1048">
+            <div class="order-card-top"><span class="order-number">#1048</span><time datetime="2026-10-15T14:32">14:32</time></div>
+            <h3>Rafael Martins</h3>
+            <p>2× Full Stack Burger · 1× Debug Cola</p>
+            <div class="order-card-bottom"><strong>R$ 78,70</strong><span class="badge badge-warning">Em preparo</span></div>
+          </article>
+          <article class="order-card" id="pedido-1047">
+            <div class="order-card-top"><span class="order-number">#1047</span><time datetime="2026-10-15T14:18">14:18</time></div>
+            <h3>Ana Beatriz</h3>
+            <p>1× Front-end Crispy · 1× Cold Brew Java</p>
+            <div class="order-card-bottom"><strong>R$ 47,80</strong><span class="badge badge-info">Saiu para entrega</span></div>
+          </article>
+          <article class="order-card" id="pedido-1046">
+            <div class="order-card-top"><span class="order-number">#1046</span><time datetime="2026-10-15T13:56">13:56</time></div>
+            <h3>João Pedro</h3>
+            <p>1× Back-end Bacon · 2× Cookie 404</p>
+            <div class="order-card-bottom"><strong>R$ 63,70</strong><span class="badge badge-success">Entregue</span></div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand brand-small" id="admin-link-footer" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Dev<span>Bite</span></a>
+      <p>Painel administrativo • DevBite © 2026.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title">
+  <title id="title">Debug Cola</title>
+  <g stroke="#171b18" stroke-width="5" stroke-linejoin="round">
+    <path fill="#E9E8DF" d="M83 25h74l-7 139H90L83 25Z"/>
+    <path fill="#D7433F" d="M86 50h68l-4 91H90l-4-91Z"/>
+    <path fill="#F4F1E8" d="M82 24c4-9 71-9 76 0-5 11-71 11-76 0Z"/>
+    <path fill="#989A95" d="M102 24c5-5 31-5 36 0-6 5-30 5-36 0Z"/>
+  </g>
+  <text x="120" y="91" fill="#F8F3E8" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">DEBUG</text>
+  <text x="120" y="112" fill="#171B18" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">COLA</text>
+</svg>
